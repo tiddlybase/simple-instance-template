@@ -4,7 +4,7 @@
       "title": "Tiddlybase sandbox",
       "faviconCode":"<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\">\n<link rel=\"manifest\" href=\"/site.webmanifest\">\n<meta name=\"msapplication-TileColor\" content=\"#da532c\">\n<meta name=\"theme-color\" content=\"#ffffff\">" 
   },
-  "clientConfig": {
+  "firebaseClientConfig": {
     "apiKey": "AIzaSyBlMtiXsngtJ6fbfDFyh_tcp4s3zE4eQV0",
     "authDomain": "sandbox.tiddlybase.com",
     "projectId": "tiddlybase-sandbox",
@@ -12,42 +12,23 @@
     "messagingSenderId": "501427251581",
     "appId": "1:501427251581:web:d0351b5e9f7d10d3bdc414"
   },
-  "authentication": {
-    "firebaseui": {
-      "signInFlow": "redirect",
-      "signInOptions": [
-          { "provider": "google.com" },
-          { "provider": "emailLink" },
-          { "provider": "password" },
-          { "provider": "github.com" }
-      ],
-      "tosUrl": "/tos.html",
-      "privacyPolicyUrl": "/privacy.html",
-      "credentialHelper": "googleyolo"
-    }
-  },
   "launchConfigs": {
     "default": {
+        "auth": {
+            "type": "firebase",
+            "writeToFirestore": true,
+            "firebaseui": {
+                "signInFlow": "redirect",
+                "signInOptions": [ { "provider": "google.com" } ],
+                "tosUrl": "/tos.html",
+                "privacyPolicyUrl": "/privacy.html",
+                "credentialHelper": "googleyolo"
+            }
+        },
         "sources": [
             {"type": "firestore", "collection": "user:$USERID", "storeType": "private"},
             {"type": "firestore", "collection": "shared", "storeType": "shared"}
         ]
-    },
-    "browserstorage": {
-        "sources": [
-            {"type": "firebase-storage"},
-            {"type": "browser-storage", "collection": "user:$USERID", "storeType": "private"},
-            {"type": "firestore", "collection": "shared", "storeType": "shared"}
-        ]
-    },
-    "empty": {
-      "build": "tiddlybase_public/minimal.html"
-    },
-    "readonly": {
-      "build": "tiddlybase_public/readonly.html"
-    },
-    "local": {
-      "isLocal": true
     }
   }
 }

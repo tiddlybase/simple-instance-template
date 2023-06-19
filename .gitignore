@@ -1,0 +1,6 @@
+etc/service-account-key.json
+node_modules
+firebase-debug.log
+.yarn/cache
+.firebase
+**/.DS_Store

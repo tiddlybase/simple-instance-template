@@ -1,0 +1,10 @@
+{
+  "packageManager": "yarn@3.2.2",
+  "scripts": {
+    "deploy": "firebase deploy --debug --only firestore,hosting"
+  },
+  "devDependencies": {
+    "@tiddlybase/cli": "^0.0.7",
+    "firebase-tools": "^12.3.1"
+  }
+}

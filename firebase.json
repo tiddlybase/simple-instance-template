@@ -3,7 +3,7 @@
     "rules": "etc/firestore.rules"
   },
   "hosting": {
-      "public": "family/public",
+      "public": "public",
       "rewrites": [
         {
           "source": "**",

@@ -5,7 +5,7 @@
     "deploy": "firebase deploy --debug --only firestore,hosting"
   },
   "devDependencies": {
-    "@tiddlybase/cli": "0.0.13",
+    "@tiddlybase/cli": "0.0.14",
     "@tiddlybase/tiddlybase-public": "^0.0.12",
     "firebase-tools": "12.4.0"
   }

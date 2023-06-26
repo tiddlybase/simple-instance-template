@@ -493,9 +493,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiddlybase/cli@npm:0.0.13":
-  version: 0.0.13
-  resolution: "@tiddlybase/cli@npm:0.0.13"
+"@tiddlybase/cli@npm:0.0.14":
+  version: 0.0.14
+  resolution: "@tiddlybase/cli@npm:0.0.14"
   dependencies:
     firebase-admin: ^10.0.2
     mustache: ^4.2.0
@@ -504,7 +504,7 @@ __metadata:
     yargs: ^17.3.1
   bin:
     tiddlybase: dist/tiddlybase
-  checksum: 96bba182c11f5344d25783808efcbd9a93f99aefbbfa0e8ddd23b2e67dd3ee73899a78eae54396bcafcda016b5a5adea0884288382a2b622fac0de1bb7a4c032
+  checksum: a0664d970ab1ae67e9ac38ec417a3deaf96d89760bb07da527ced9775622bc54706f0cdd19fb8500495de21c85599cf76b9b7fe6f819bf16c597c1e10318414e
   languageName: node
   linkType: hard
 
@@ -5285,7 +5285,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@tiddlybase/cli": 0.0.13
+    "@tiddlybase/cli": 0.0.14
     "@tiddlybase/tiddlybase-public": ^0.0.12
     firebase-tools: 12.4.0
   languageName: unknown

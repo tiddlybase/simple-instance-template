@@ -1,11 +1,11 @@
 {
   "packageManager": "yarn@3.2.2",
   "scripts": {
-    "generate:tiddlybase-config.json": "",
+    "html": "tiddlybase generate:outer.html",
     "deploy": "firebase deploy --debug --only firestore,hosting"
   },
   "devDependencies": {
-    "@tiddlybase/cli": "0.0.12",
+    "@tiddlybase/cli": "0.0.13",
     "@tiddlybase/tiddlybase-public": "^0.0.12",
     "firebase-tools": "12.4.0"
   }
